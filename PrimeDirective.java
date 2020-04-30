@@ -32,6 +32,8 @@ public class PrimeDirective {
      * @return ArrayList
      */
     public void onlyPrimes(ArrayList<Integer> s) {
+        //TODO:
+        //  - Make another method for non-primes
 
         for(int i = 0; i < s.size(); i++) {
             if(this.isPrime(s.get(i))) {
@@ -44,7 +46,7 @@ public class PrimeDirective {
     }
 
 
-    public void sort() {
+    public void sort() { //TODO make methods to sort each list.
         Collections.sort(primeNumbers);
         Collections.sort(numbers);
     }
@@ -70,9 +72,6 @@ public class PrimeDirective {
                 toString += numbers.get(i);
             }
         }
-
-
-
         return toString;
     }
 
